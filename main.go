@@ -1,6 +1,6 @@
 package main
 
-import "golesson/loops"
+import arrays "golesson/Arrays"
 
 func main() {
 	//go goroutines.CiftSayilar()
@@ -9,5 +9,8 @@ func main() {
 	//conditionals.Demo3()
 	//loops.Demo1()
 	//loops.Demo2()
-	loops.Demo3()
+	//loops.Demo3()
+	//loops.Demo4()
+	//loops.Demo5()
+	arrays.Demo1()
 }
