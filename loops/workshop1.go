@@ -27,24 +27,62 @@ func Demo3() {
 		fmt.Println("Oyunu Kaybettin :((")
 	}
 	*/
-	//Eğitmenin Kodu
 
-	aklimdakiSayi := 80
-	tahminEdilenSayi := 0
+	/*
+		Eğitmenin Kodu
 
-	fmt.Println("Bir sayı tahmin edin.")
-	fmt.Scanln(&tahminEdilenSayi)
-	for aklimdakiSayi != tahminEdilenSayi {
-		if tahminEdilenSayi < aklimdakiSayi {
-			fmt.Println("Daha büyük bir sayi giriniz.")
-			fmt.Scanln(&tahminEdilenSayi)
+		aklimdakiSayi := 80
+		tahminEdilenSayi := 0
+
+		fmt.Println("Bir sayı tahmin edin.")
+		fmt.Scanln(&tahminEdilenSayi)
+		for aklimdakiSayi != tahminEdilenSayi {
+			if tahminEdilenSayi < aklimdakiSayi {
+				fmt.Println("Daha büyük bir sayi giriniz.")
+				fmt.Scanln(&tahminEdilenSayi)
+			}
+			if tahminEdilenSayi > aklimdakiSayi {
+				fmt.Println("Daha küçük bir sayi giriniz.")
+				fmt.Scanln(&tahminEdilenSayi)
+			}
 		}
-		if tahminEdilenSayi > aklimdakiSayi {
-			fmt.Println("Daha küçük bir sayi giriniz.")
-			fmt.Scanln(&tahminEdilenSayi)
+		if aklimdakiSayi == tahminEdilenSayi {
+			fmt.Println("Bravo Bildiniz.")
 		}
+	*/
+
+	// kullanıcı kaç tahminde buldu sonucu onu yazacaz
+
+	aklimdakiSayi := 34
+	var tahminEdilenSayi int
+	fmt.Println("1 ile 100 arasında tuttuğum sayıyı tahmin et!")
+
+	for i := 1; i <= 50; i++ {
+		fmt.Scanln(&tahminEdilenSayi)
+		if aklimdakiSayi < tahminEdilenSayi {
+			fmt.Println("Daha küçük bir sayı gir")
+		}
+		if aklimdakiSayi > tahminEdilenSayi {
+			fmt.Println("Daha büyük bir sayı gir")
+		}
+		if aklimdakiSayi == tahminEdilenSayi {
+
+			if i <= 3 {
+				fmt.Printf(" Süper %v. tahminde buldunuz.", i)
+			}
+
+			if i >= 4 && i <= 6 {
+				fmt.Printf(" Güzel %v. tahminde buldunuz.", i)
+			}
+
+			if i > 6 {
+				fmt.Printf(" Fena değil %v. tahminde buldunuz.", i)
+			}
+			break
+		}
+
 	}
-	if aklimdakiSayi == tahminEdilenSayi {
-		fmt.Println("Bravo Bildiniz.")
+	if aklimdakiSayi != tahminEdilenSayi {
+		fmt.Println("Oyunu Kaybettin :((")
 	}
 }
