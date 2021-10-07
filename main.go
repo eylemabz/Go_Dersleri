@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"golesson/functions"
-)
+import "golesson/maps"
 
 func main() {
 	//go goroutines.CiftSayilar()
@@ -32,10 +29,14 @@ func main() {
 		fmt.Println("çarpım:", sonuc3)
 		//fmt.Println("bölüm:", sonuc4)
 	*/
-	fmt.Println(functions.ToplaVaryadic(1, 2, 6, 9, 4, 8))
-	fmt.Println(functions.ToplaVaryadic(2, 4))
-	fmt.Println(functions.ToplaVaryadic())
 
-	sayilar := []int{4, 6, 5, 7}
-	fmt.Println(functions.ToplaVaryadic(sayilar...))
+	/*
+		fmt.Println(functions.ToplaVaryadic(1, 2, 6, 9, 4, 8))
+		fmt.Println(functions.ToplaVaryadic(2, 4))
+		fmt.Println(functions.ToplaVaryadic())
+
+		sayilar := []int{4, 6, 5, 7}
+		fmt.Println(functions.ToplaVaryadic(sayilar...))
+	*/
+	maps.Demo1()
 }
