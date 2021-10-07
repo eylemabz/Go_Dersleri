@@ -1,6 +1,6 @@
 package main
 
-import "golesson/maps"
+import "golesson/for_range"
 
 func main() {
 	//go goroutines.CiftSayilar()
@@ -38,5 +38,8 @@ func main() {
 		sayilar := []int{4, 6, 5, 7}
 		fmt.Println(functions.ToplaVaryadic(sayilar...))
 	*/
-	maps.Demo1()
+
+	//maps.Demo1()
+	//for_range.Demo2()
+	for_range.Demo3()
 }
