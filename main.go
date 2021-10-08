@@ -1,7 +1,5 @@
 package main
 
-import "golesson/for_range"
-
 func main() {
 	//go goroutines.CiftSayilar()
 	//conditionals.Demo1()
@@ -41,5 +39,19 @@ func main() {
 
 	//maps.Demo1()
 	//for_range.Demo2()
-	for_range.Demo3()
+	//for_range.Demo3()
+
+	/*
+		sayi := 20
+		pointers.Demo1(&sayi)
+		fmt.Println("maindeki sayi:", sayi)
+	*/
+
+	/*
+		sayilar := []int{1, 2, 3}
+		pointers.Demo2(sayilar)
+		fmt.Println("maindeli sayı:", sayilar[0])
+
+	*/
+
 }
