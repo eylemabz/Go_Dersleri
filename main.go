@@ -1,7 +1,5 @@
 package main
 
-import "golesson/structs"
-
 func main() {
 	//go goroutines.CiftSayilar()
 	//conditionals.Demo1()
@@ -57,5 +55,11 @@ func main() {
 	*/
 
 	//structs.Demo1()
-	structs.Demo2()
+	//structs.Demo2()
+
+	/* go goroutines.CiftSayilar()
+	go goroutines.TekSayilar()
+	time.Sleep(5 * time.Second)
+	fmt.Println("main bitti")
+	*/
 }
