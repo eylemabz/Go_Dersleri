@@ -1,6 +1,8 @@
 package main
 
-import "golesson/interfaces"
+import (
+	"golesson/defer_statement"
+)
 
 func main() {
 	//go goroutines.CiftSayilar()
@@ -80,5 +82,8 @@ func main() {
 	*/
 
 	//	interfaces.Demo1()
-	interfaces.Demo2()
+	//interfaces.Demo2()
+	//defer_statement.B()
+	//defer_statement.Test()
+	defer_statement.Demo3()
 }
