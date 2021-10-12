@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"golesson/channels"
-)
+import "golesson/interfaces"
 
 func main() {
 	//go goroutines.CiftSayilar()
@@ -66,14 +63,22 @@ func main() {
 	go goroutines.TekSayilar()
 	time.Sleep(5 * time.Second)
 	fmt.Println("main bitti")
+
 	*/
 
-	ciftSayiCn := make(chan int)
-	tekSayiCn := make(chan int)
-	go channels.CiftSayilar(ciftSayiCn)
-	go channels.TekSayilar(tekSayiCn)
+	/*
 
-	ciftsayiToplam, teksayiToplam := <-ciftSayiCn, <-tekSayiCn
-	carpim := ciftsayiToplam * teksayiToplam
-	fmt.Println("carpım: ", carpim)
+		ciftSayiCn := make(chan int)
+		tekSayiCn := make(chan int)
+		go channels.CiftSayilar(ciftSayiCn)
+		go channels.TekSayilar(tekSayiCn)
+
+		ciftsayiToplam, teksayiToplam := <-ciftSayiCn, <-tekSayiCn
+		carpim := ciftsayiToplam * teksayiToplam
+		fmt.Println("carpım: ", carpim)
+
+	*/
+
+	//	interfaces.Demo1()
+	interfaces.Demo2()
 }
