@@ -1,7 +1,8 @@
 package main
 
 import (
-	"golesson/defer_statement"
+	"fmt"
+	"golesson/error_handling"
 )
 
 func main() {
@@ -85,5 +86,9 @@ func main() {
 	//interfaces.Demo2()
 	//defer_statement.B()
 	//defer_statement.Test()
-	defer_statement.Demo3()
+	//defer_statement.Demo3()
+	//error_handling.Demo1()
+	//interfaces.Demo3()
+	//error_handling.Demo2()
+	fmt.Println(error_handling.TahminEt1(102))
 }
