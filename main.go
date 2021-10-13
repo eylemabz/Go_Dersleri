@@ -1,6 +1,9 @@
 package main
 
-import "golesson/restful"
+import (
+	"fmt"
+	"golesson/project"
+)
 
 func main() {
 	//go goroutines.CiftSayilar()
@@ -92,5 +95,12 @@ func main() {
 	//string_functions.Demo2()
 
 	//restful.Demo1()
-	restful.Demo2()
+	//restful.Demo2()
+
+	//project.GetAllProducts()
+	project.AddProduct()
+	products, _ := project.GetAllProducts()
+	for i := 0; i < len(products); i++ {
+		fmt.Println(products[i].ProductName)
+	}
 }
