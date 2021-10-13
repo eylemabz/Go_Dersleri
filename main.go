@@ -1,8 +1,6 @@
 package main
 
-import (
-	"golesson/string_functions"
-)
+import "golesson/restful"
 
 func main() {
 	//go goroutines.CiftSayilar()
@@ -91,5 +89,8 @@ func main() {
 	//error_handling.Demo2()
 	//fmt.Println(error_handling.TahminEt1(102))
 	//string_functions.Demo1()
-	string_functions.Demo2()
+	//string_functions.Demo2()
+
+	//restful.Demo1()
+	restful.Demo2()
 }
